@@ -15,7 +15,9 @@ const CUSTOMER_SITES = {
     tianyi: {
         api: 'http://7.qqqtv.top/api.php/provide/vod/',
         name: '【影视】天翼影视',
-    },
+    }
+}; // 👈 您之前就是缺了这个关键的结束符号！
+
 // 下面这部分代码保持不变，不要删掉
 if (window.extendAPISites) {
     window.extendAPISites(CUSTOMER_SITES);
