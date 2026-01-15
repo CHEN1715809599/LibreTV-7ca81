@@ -1,5 +1,5 @@
 const CUSTOMER_SITES = {
-    // =========== 🟢 第一组：常规影视 (推荐) ===========
+    // =========== 🟢 第一组：常规影视 (推荐/最稳) ===========
     feifan: {
         api: 'http://cj.ffzyapi.com/api.php/provide/vod/',
         name: '【影视】非凡资源 (推荐)',
@@ -17,28 +17,28 @@ const CUSTOMER_SITES = {
         name: '【影视】天翼影视',
     },
 
-    // =========== 🔴 第二组：课题研究 (来自您的 Vercel) ===========
-    // 基于您提供的 endpoints.ts 文件，我为您提取了最核心的搜索接口
+    // =========== 🔴 第二组：课题研究 (您提供的新公开端点) ===========
+    // 注意：已为您剔除 Rule34 (纯图片无法播放)，保留了视频/GIF 接口
     
-    study_ph: {
-        api: 'https://adult-colony-api-eta.vercel.app/pornhub/search',
-        name: '【课题】PornHub (自建)',
+    study_eporner: {
+        // Eporner 官方 API，已去除查询参数，保留根路径
+        api: 'https://www.eporner.com/api/v2/video/search/',
+        name: '【课题】Eporner (官方)',
     },
-    study_miss: {
-        api: 'https://adult-colony-api-eta.vercel.app/missav/search',
-        name: '【课题】MissAV (自建)',
+    study_lust: {
+        // Lustpress 开源聚合 API
+        api: 'https://lustpress.vercel.app/api/videos',
+        name: '【课题】Lustpress (聚合)',
     },
-    study_xv: {
-        api: 'https://adult-colony-api-eta.vercel.app/xvideos/search',
-        name: '【课题】XVideos (自建)',
+    study_redgifs: {
+        // RedGIFs 趋势接口 (短视频/GIF)
+        api: 'https://api.adultdatalink.com/redgifs/trending',
+        name: '【课题】RedGIFs (短视频)',
     },
-    study_javhd: {
-        api: 'https://adult-colony-api-eta.vercel.app/javhdtoday/search',
-        name: '【课题】JavHD (自建)',
-    },
-    study_xham: {
-        api: 'https://adult-colony-api-eta.vercel.app/xhamster/search',
-        name: '【课题】Xhamster (自建)',
+    study_hentai: {
+        // Hentai Ocean
+        api: 'https://hentaiocean.com/api',
+        name: '【课题】HentaiOcean',
     }
 };
 
